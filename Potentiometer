@@ -1,0 +1,33 @@
+/*
+
+POTENTIOMETER
+
+Measure the position of a potentiometer and use it to 
+control the blink rate of an LED. Turn the knob to make
+it blink faster or slower.
+
+*/
+
+int sensorPin = 0;
+
+int ledPin = 13;
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);
+  
+}
+
+void loop()
+{
+  int sensorValue;
+  sensorValue = analogRead(sensorPin);
+  
+  digitalWrite(ledPin, HIGH);
+  
+  delay(sensorValue);
+  
+  digitalWrite(ledPin, LOW);
+  
+  delay(sensorValue);
+}
