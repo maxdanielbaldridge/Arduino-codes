@@ -14,6 +14,8 @@ void setup() {
   lcd.print("I "); 
   lcd.write(byte(0)); // when calling lcd.write() '0' must be cast as a byte
   lcd.print(" Noelle! ");
+  //You can add more lines by inputing lcd.print("whatever ");
+  //You can also take out the lcd.write(byte(0)); which is the heart symbol.
   
 
 }
